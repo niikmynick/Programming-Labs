@@ -84,7 +84,7 @@ public class Swagger extends StatusMove {
     @Override
     protected java.lang.String describe() {
         return "сбивает с толку и увеличивает атаку";
-    }
+    } 
 }
 
 public class Tackle extends PhysicalMove {
