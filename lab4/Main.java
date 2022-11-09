@@ -1,5 +1,5 @@
 public class Main {
-    public static void main(String[] args) throws RelationshipsException {
+    public static void main(String[] args) {
             try {
                     Skills quarrel = new Skills("Ссориться", "с другим коротышкой");
                     Skills fight = new Skills("Драться", "с другим коротышкой");
@@ -16,7 +16,7 @@ public class Main {
                     znaika.addSkill(new Skills("Размышлять", "над явлением невесомости"));
                     znaika.addSkill(new Skills("Стараться", "найти  обоснование"));
                     znaika.addSkill(new Skills("Делиться", "с профессором Звезодчкиным"));
-                    znaika.addSkill(new Skills("Дружить", "с профессором Звездочкиным"));;
+                    znaika.addSkill(new Skills("Дружить", "с профессором Звездочкиным"));
                     znaika.addSkill(quarrel);
                     znaika.addSkill(fight);
                     znaika.addSkill(new Skills("Не расставаться", "с профессором Звездочкиным"));
@@ -24,6 +24,10 @@ public class Main {
                     znaika.addSkill(dispute);
                     znaika.addSkill(new Skills("Уважать", "профессора Звездочкина"));
                     System.out.println();
+
+//                    znaika.setThinkingTopic("dkfgsbekgfnles");
+//                    System.out.println(znaika.getThinkingTopic());
+//                    System.out.println();
 
                     Midget zvezdochkin = new Midget("профессор Звездочкин");
                     zvezdochkin.addSkill(new Skills("Дружить", "со Знайкой"));

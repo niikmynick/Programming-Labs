@@ -218,6 +218,32 @@ public class Midget extends abstractHuman {
         String getPhrase(Midget person);
     }
 
+    String thinkingTopic;
+
+    class ThinkingTopic{
+        private String topic;
+
+        private ThinkingTopic(String phrase) {
+            this.topic = phrase;
+        }
+
+        public void setPhrase(String phrase) {
+            this.topic = phrase;
+        }
+
+        public String getPhrase(Midget person) {
+            return "Любимая фраза " + person + " это: \"" + this.topic + "\"";
+        }
+    }
+
+    public void setThinkingTopic(String phrase) {
+        this.thinkingTopic = phrase;
+        ThinkingTopic newtopic = new ThinkingTopic(thinkingTopic);
+    }
+    public String getThinkingTopic() {
+        return "Любимая фраза " + this.getName() + " это: \"" + this.thinkingTopic + "\"";
+    }
+
     @Override
     public int hashCode() {
         return super.hashCode() + this.getName().hashCode();
